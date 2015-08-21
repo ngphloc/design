@@ -1,0 +1,6 @@
+<@DDB>
+<R{HBCEAQX} ; D{(H->BCEAQX), (AQ->BCE), (BC->E), (CE->B)}>
+<R{AQPYEC} ; D{(AQ->PYEC)}>
+<R{BCEZMNG} ; D{(BC->EZMNG), (CE->B)}>
+<R{PQSMNG} ; D{(PQ->SMNG)}>
+<R{MNGV} ; D{(MNG->V)}>

@@ -1,0 +1,68 @@
+Design - Implementation of database algebra algorithms
+Author: Loc Nguyen
+
+I. Introduction
+The software Design implements almost algorithms of database algebra, version 1.0 copyright 2000, which is developed when I was studying the subject "Database Design" with teacher Nguyen Thi Diem Tien at University of Science. The version 2.0 is issued in 2004 at the Center of Information Technology Development, now known as University of Information Technology, National University, Ho Chi Minh city, Vietnam. Software Design is written in Microsoft Visual C++ 6.0. The next version will support operating directly on databases such as MS Access, MS SQL Server, MySQL, Oracle and has more enhanced functions.
+
+Phan mem Design cai dat tat ca cac thuat toan dai so co so du lieu duoc phat trien khi toi dang hoc mon "Thiet Ke Co So Du Lieu" voi co Nguyen Thi Diem Tien - Dai hoc Khoa Hoc Tu Nhien, phien ban 1.0 Copyright 2000. Phien ban 2.0 duoc phat hanh vao nam 2004 tai Trung Tam Phat Trien Cong Nghe Thong Tin, nay la Truong DH Cong Nghe Thong Tin - DH Quoc Gia Thanh pho Ho Chi Minh. Phan mem Design duoc viet bang Microsoft Visual C++ 6.0. Phien ban tiep theo se ho tro thao tac truc tiep len co so du lieu nhu MS Access, MS SQL Server, MySQL, Oracle va co them mot so chuc nang tang cuong.
+
+
+
+II. Usage
+Ban thuc thi tap tin "design.bat" trong thu muc EXE. Ban cung co the thuc thi tap tin "Design.exe" neu may ban da cai san activeX MsFlxGrd. Cach su dung gom 3 buoc: nhap lieu, nhan nut "Accept" va dung cac nut chuc nang.
+
+1. Nhap lieu
+Co 2 cach nhap lieu:
+-  Mo tap tin: chon muc File - Open de mo cac tap tin du lieu trong thu muc DATA. Sau khi mo co the chinh sua va luu lai bang lenh File - Save hay File - Save As.
+-  Nhap truc tiep cac thuoc tinh vao o edit box R va cac phu thuoc ham, phu thuoc da tri vao o edit box D. Sau do co the luu lai bang lenh File - Save hay File - Save As.
+
+
+2. Nhan nut "Accept"
+Sau do nhan nut "Accept" de nhan du lieu, neu khong nhan nut "Accept", tat ca thuat toan se khong thuc hien duoc. Nut "Clear" dung de xoa du lieu de tao du lieu moi (co the dung lenh File-New).
+
+
+3. Cac nut chuc nang
+-  "FindKey": Tim tat ca cac khoa cua quan he.
+-  "Phu toi thieu": Thuat toan tim phu toi thieu
+-  "Co so toi thieu": Tim co so toi thieu roi nhau, giong nhu nut do thi, khong phu thuoc nhung gi da nhap, nen khong can nhan nut "Accept" truoc khi nhan nut nay.
+-  "BagOfX": Tim bao dong cua tap X.
+-  "DependOfX": Tim tap phu thuoc da tri cua X dua tren D.
+
+-  "Phan ra": Phan ra quan he. Khi phan ra cho phep nhap so thu tu ham dau tien dung de phan ra. Co the nhan nut View Full de xem cac thuoc tinh cung voi phu thuoc ham cua phan ra.
+-  "P.ra cai tien": Thuat toan phan ra cai tien.
+-  "T.hop cai tien": Thuat toan tong hop cai tien.
+
+-  "Do thi / Luoc do": Nut nay chi mo ra mot cua so moi de nhap cac quan he, kiem tra bao toan thong tin bang thuat toan Tableau, kiem tra cac phu thuoc ham co nguy co mau thuan dang tuyen tinh va ve do thi neu. Day la nut dac biet vi khong phu thuoc nhung gi da nhap.
+-  "Tableau": Thuat toan Tableau kiem tra bao toan thong tin.
+
+
+Ghi chu
+Khi tim khoa, so to hop toi da duoc tao tu 12 ky tu tuc lon hon 12! mot chut.
+
+Dau -> dung de chi phu thuoc ham khi nhap lieu vao o edit box D.
+Dau ->> dung de chi phu thuoc da tri khi nhap lieu vao o edit box D.
+Khi tim khoa, tim bao dong, tim co so toi thieu roi nhau, tim phu toi thieu, thuat toan tong hop se bo qua cac phu thuoc da tri.
+Moi ki tu la mot thuoc tinh phan biet chu hoa chu thuong. Cac thuoc tinh hay phu thuoc ham, phu thuoc da tri (tru cac dau -> hay ->>) khong duoc bieu dien boi cac ky tu hien thi trong bang ma ASCII se khong hop le va chuong trinh se bo qua.
+Cac phu thuoc ham, phu thuoc da tri cach nhau bang dau cham phay hay xuong dong.
+
+Cac thuoc tinh khi nhap co the sat nhau nhu ABC, hay cach nhau bang dau phay nhu A,B,C,EF.
+Tap thuoc tinh duoc ghi A,B hay AB la nhu nhau doi voi phu thuoc ham nhung co hoi khac khi tim DependOfX voi AB la tap thuoc tinh khong the phan chia.
+
+Cac tap tin du lieu mo ta mot quan he deu phai duoc nhan dang bang chuoi "@DDB", vi du:
+        @DDB
+        ABCDEG
+        AB->C ; D->EG ; C->A ; BE->C ; BC->D
+        CG->BD ; ACD->B ; CE->AG
+        A->>EG ; G->>BD ; B->>C
+(Ten mac nhien tap tin du lieu mo ta mot quan he la Untitled.dat)
+
+Cac tap tin du lieu mo ta nhieu quan he deu phai duoc nhan dang bang chuoi  "<@DDB>", vi du:
+        <@DDB>
+        <R{ABC} ; D{(A->BC) , (B->>AC) }>
+        <R{DEF} ; D{(D->EF) , ( E->>DF)}>
+        <R{DAG} ; D{(DA->G)}>
+        <R{HIA} ; D{(H->IA) , ( A->HI )}>
+        <R{HDJA} ; D{(HD->JA) , ( H->D) , ( D->A)}>
+(Ten mac nhien tap tin du lieu mo ta nhieu quan he la Untitled.dat)
+
+Khi chuong trinh khong ve do thi, ban hay dang ky activeX MsFlxGrd bang cach go dong lenh "Regsvr32 Msflxgrd.ocx". Ban cung co the thuc thi tap tin "registerActiveX.bat" trong thu muc EXE.

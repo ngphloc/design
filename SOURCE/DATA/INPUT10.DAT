@@ -1,0 +1,28 @@
+@DDB
+ABCDEFGHIJKL
+A->>BC ; C->D
+E,F,J->GH
+HKI->>A,I,J
+H->L,K ; CD->F
+BC->A;
+C->>D,E,K;
+G,H->K
+H->ACF
+G,K,L->>H
+D->>A
+HIJK->>L,K,E
+G->A,BC,D
+EF->L
+K->IJ
+H->A
+A->KI
+KH->DEFA
+A->JI
+E->DFAC
+ABCDEF->K
+K->ACFG
+ADE->AKI
+EFG->HIJ
+J->K
+BHI->KIJ
+BNI->IJK

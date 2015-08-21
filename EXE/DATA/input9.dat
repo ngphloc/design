@@ -1,0 +1,4 @@
+@DDB
+ABCDEGH
+AB->D ; EH->G
+G->C   ; D   ->C

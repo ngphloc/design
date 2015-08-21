@@ -1,0 +1,16 @@
+<@DDB>
+<R{NOPSTXK} ; D{(NOP->STXK) , (ST->NOPXK)}>
+<R{RY} ; D{R->Y}>
+<R{OZR} ; D{O->ZR}>
+<R{KH} ; D{K->H}>
+<R{MPONU} ; D{M->PONU}>
+<R{LV} ; D{L->V}>
+<R{NPL} ; D{NP->L}>
+
+
+
+
+
+
+
+

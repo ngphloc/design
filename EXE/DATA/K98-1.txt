@@ -1,0 +1,6 @@
+<@DDB>
+<R{BCGZD} ; D{(B->CGZD), (CG->BZD)}>
+<R{EDY} ; D{(ED->Y)}>
+<R{DT} ; D{(D->T)}>
+<R{ABEX} ; D{(A->BEX)}>
+<R{GRV} ; D{(G->RV)}>

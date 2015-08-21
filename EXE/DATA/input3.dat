@@ -1,0 +1,5 @@
+@DDB
+A,B,C,D,E,G
+AD->B
+EG->A
+B,C->G

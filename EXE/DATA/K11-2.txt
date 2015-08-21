@@ -1,0 +1,8 @@
+<@DDB>
+<R{AS} ; D{(A->S)}>
+<R{DT} ; D{(D->T)}>
+<R{B->VGDH} ; D{(B->VGDH)}>
+<R{GHAX} ; D{(GH->AX)}>
+<R{JIGHZ} ; D{(JI->GHZ)}>
+<R{KBJIY} ; D{(K->BJIY)}>
+<R{CKW} ; D{(C->KW)}>

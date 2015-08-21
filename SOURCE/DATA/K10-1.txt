@@ -1,0 +1,6 @@
+<@DDB>
+<R{ABCEGDX} ; D{(A->BCEGDX)}>
+<R{GECY} ; D{(GE->CY)}>
+<R{CEZ} ; D{(CE->Z)}>
+<R{BCEDT} ; D{(BCE->DT), (BD->CET)}>
+<R{DVCE} ; D{(D->VCE)}>

@@ -1,0 +1,21 @@
+Cu phap nhap nhu sau:
+----------------------------------------------------
+<R{AB} ; D{(A->B)}>
+<R{ACDEF} ; D{(AC->DEF)}>
+<R{CGHIJ} ; D{(C->GHIJ)}>
+<R{KALM} ; D{(KA->LM)}>
+<R{NA} ; D{ }>
+<R{AOP} ; D{(AO->P)}>
+<R{AQ} ; D{ }>
+---------------------------------------------------
+
+Moi quan he duoc khai bao trong cap  dau <  > voi
+R{ABCDE} la tap thuoc tinh va
+D{ ( A->BC) , ( D->EF) } la tap quan he
+
+Cac quan he co the cung dong nhu
+<R{AB} ; D{(A->B)}> <R{ACDEF} ; D{(AC->DEF)}>
+
+hay xuong dong nhu
+<R{AB} ; D{(A->B)}>
+<R{ACDEF} ; D{(AC->DEF)}>

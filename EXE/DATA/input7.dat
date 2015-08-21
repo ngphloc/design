@@ -1,0 +1,10 @@
+@DDB
+ABCD
+A->C ; C->A
+BC->D
+AD->B
+CD->B
+AB->D
+A->BD
+C->BD
+A->>BCD

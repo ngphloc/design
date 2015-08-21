@@ -1,0 +1,12 @@
+<@DDB>
+<R{AB} ; D{(A->B)}>
+<R{ACDEF} ; D{(AC->DEF)}>
+<R{CGHIJ} ; D{(C->GHIJ)}>
+<R{KALM} ; D{(KA->LM)}>
+<R{NA} ; D{ }>
+<R{AOP} ; D{(AO->P)}>
+<R{AQ} ; D{ }>
+
+
+
+

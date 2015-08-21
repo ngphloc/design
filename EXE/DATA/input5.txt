@@ -1,0 +1,8 @@
+<@DDB>
+<R{MNOPT} ; D{MNO->PT}>
+<R{NOPGH} ; D{NOP->GH}>
+<R{GHXP} ; D{GH->XP}>
+<R{NOZ} ; D{NO->Z}>
+<R{PY} ; D{P->Y}>
+<R{INOP} ; D{I->NOP}>
+<R{MI} ; D{}>

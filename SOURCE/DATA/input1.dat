@@ -1,0 +1,5 @@
+@DDB
+ABCDEG
+AB->C ; D->EG ; C->A ; BE->C ; BC->D
+CG->BD ; ACD->B ; CE->AG
+A->>EG ; G->>BD ; B->>C

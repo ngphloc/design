@@ -1,0 +1,9 @@
+<@DDB>
+<R{ MNOT } ; D{ (MNO->T)  }>
+<R{NOPY } ; D{ (NOP->Y)  }>
+<R{GHX } ; D{ (GH->X)  }>
+<R{ NOZ } ; D{ (NO->Z)  }>
+<R{PY } ; D{ (P->Y)  }>
+<R{M } ; D{ }>
+<R{MI } ; D{ }>
+<R{I } ; D{  }>

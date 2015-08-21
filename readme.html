@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Design - Implementation of database algebra algorithms</title>
+</head>
+<body>
+
+<h2 align="center">
+    Design - Implementation of database algebra algorithms
+</h2>
+<p align="center">
+    <em>Author: Loc Nguyen</em>
+</p>
+<p>&nbsp;</p>
+<p>
+<a href="https://drive.google.com/file/d/0ByHQY9CungG-VUFnazQyeW44Yms/edit?usp=sharing" target="_blank">Download</a>
+</p>
+<p>&nbsp;</p>
+<p>
+    The software <strong>Design</strong> implements almost algorithms of database algebra, version 1.0 copyright 2000, which is developed when I was studying
+    the subject “Database Design” with teacher Nguyen Thi Diem Tien at University of Science. The version 2.0 is issued in 2004 at the Center of Information
+    Technology Development, now known as University of Information Technology, National University, Ho Chi Minh city, Vietnam. Software <em>Design</em> is
+    written in Microsoft Visual C++ 6.0. The next version will support operating directly on databases such as MS Access, MS SQL Server, MySQL, Oracle and has
+    more enhanced functions.
+</p>
+<p>
+    Phần mềm <strong>Design</strong> cài đặt hầu hết các thuật toán đại số cơ sở dữ liệu, phiên bản 1.0 Copyright 2000, được phát triển khi tôi đang học môn
+    "Thiết Kế Cơ Sở Dữ Liệu" với cô Nguyễn Thị Diễm Tiên – Đại học Khoa Học Tự Nhiên. Phiên bản 2.0 được phát hành vào năm 2004 tại Trung Tâm Phát Triển Công
+    Nghệ Thông Tin nay là Trường ĐH Công Nghệ Thông Tin – ĐH Quốc Gia Thành phố Hồ Chí Minh. Phần mềm Design được viết bằng Microsoft Visual C++ 6.0. Phiên bản
+    tiếp theo sẽ hỗ trợ thao tác trực tiếp lên cơ sở dữ liệu như MS Access, MS SQL Server, MySQL, Oracle và có thêm một số chức năng tăng cường.
+</p>
+<p>&nbsp;</p>
+
+<p>
+    Bạn thực thi tập tin “<em>design.bat</em>” trong thư mục EXE. Bạn cũng có thể thực thi tập tin “<em>Design.exe</em>” nếu máy bạn đã cài sẵn activeX
+    MsFlxGrd. Cách sử dụng gồm 3 bước: nhập liệu, nhấn nút “<em>Accept</em>” và dùng các nút chức năng.
+</p>
+<p>
+    <strong>1. Nhập liệu</strong>
+</p>
+<p>
+    Có 2 cách nhập liệu:
+    <ol>
+    <li>
+    Mở tập tin: chọn mục File – Open để mở các tập tin dữ liệu trong thư mục DATA. Sau khi mở có thể chỉnh sửa và lưu lại bằng lệnh File – Save hay File –
+    Save As.
+    </li>
+    <li>
+    Nhập trực tiếp các thuộc tính vào ô edit box R và các phụ thuộc hàm, phụ thuộc đa trị vào ô edit box D. Sau đó có thể lưu lại bằng lệnh File – Save hay
+    File – Save As.
+    </li>
+    </ol>
+</p>
+<p>&nbsp;</p>
+
+<p>
+    <strong>2. Nhấn nút <em>“Accept”</em></strong>
+</p>
+<p>
+    Sau đó nhấn nút <em>“Accept”</em> để nhận dữ liệu, nếu không nhấn nút <em>“Accept”</em>, tất cả thuật toán sẽ không thực hiện được. Nút <em>“Clear”</em>
+    dùng để xoa dữ liệu để tạo dữ liệu mới, có thể dùng lệnh File – New.
+</p>
+<p>&nbsp;</p>
+
+<p>
+    <strong>3. Các nút chức năng</strong>
+</p>
+<ul>
+<li>
+    <em>“FindKey”</em>: Tìm tất cả các khóa của quan hệ.
+</li>
+<li>
+    <em>“Phu toi thieu”</em>: Thuật toán tìm phủ tối thiểu.
+</li>
+<li>
+    <em>“Co so toi thieu”</em>: Tìm cơ sở tối thiểu rời nhau, giống như nút đồ thị, không phụ thuộc những gì đã nhập, nên không cần nhấn nút <em>Accept</em>
+    trước khi nhấn nút này.
+</li>
+<li>
+    <em>“BagOfX”</em>: Tìm bao đóng của tập X.
+</li>
+<li>
+    <em>“DependOfX”</em>: Tìm tập phụ thuộc đa trị của X dựa trên D.
+</li>
+<br/>
+<li>
+    “<em>Phan ra</em>”: Phân rã quan hệ. Khi phân rã cho phép nhập số thứ tự hàm đầu tiên dùng để phân rã. Có thể nhấn nút <em>View Full</em> để xem các
+    thuộc tính cùng với phụ thuộc hàm của phân rã.
+</li>
+<li>
+    <em>“P.ra cai tien”</em>: Thuật toán phân rã cải tiến.
+</li>
+<li>
+    <em>“T.hop cai tien”</em>: Thuật toán tổng hợp cải tiến.
+</li>
+<br/>
+<li>
+    <em>“Do thi / Luoc do”</em>: Nút này chỉ mở ra một cửa sổ mới để nhập các quan hệ, kiểm tra bảo toàn thông tin bằng thuật toán Tableau, kiểm tra các phụ
+    thuộc hàm có nguy cơ mâu thuẫn dạng tuyến tính và vẽ đồ thị. Đây là nút đặc biệt vì không phụ thuộc những gì đã nhập.
+</li>
+<li>
+    <em>“Tableau”</em>: Thuật toán Tableau kiểm tra bảo toàn thông tin.
+</li>
+</ul>
+<p>&nbsp;</p>
+
+<p>
+    <strong>Ghi chú</strong>
+</p>
+<p>
+    Khi tìm khóa, số tổ hợp tối đa được tạo từ 12 ký tự tức lớn hơn 12! một chút.
+</p>
+<p>
+    Dấu <strong>-&gt;</strong> dùng để chỉ phụ thuộc hàm khi nhập liệu vào ô edit box D.<br/>
+    Dấu <strong>-&gt;&gt;</strong> dùng để chỉ phụ thuộc đa trị khi nhập lieu vào ô edit box D.<br/>
+    Khi tìm khóa, tìm bao đóng, tìm cơ sở tối thiểu rời nhau, tìm phủ tối thiểu, thuật toán tổng hợp sẽ bỏ qua các phụ thuộc đa trị.<br/>
+    Mỗi kí tự là một thuộc tính phân biệt chữ hoa chữ thường. Các thuộc tính hay phụ thuộc hàm, phụ thuộc đa trị (trừ các dấu -&gt; hay -&gt;&gt;) không được
+    biễu diễn bởi các ký tự hiển thị trong bảng mã ASCII sẽ không hợp lệ và chương trình sẽ bỏ qua.<br/>
+    Các phụ thuộc hàm, phụ thuộc đa trị cách nhau bằng dấu chấm phẩy hay xuống dòng.
+</p>
+<p>
+    Các thuộc tính khi nhập có thể sát nhau như ABC, hay cách nhau bằng dấu phẩy như A,B,C,EF.<br/>
+    Tập thuộc tính được ghi A,B hay AB là như nhau đối với phụ thuộc hàm nhưng có hơi khác khi tìm <em>DependOfX</em> với AB là tập thuộc tính không thể phân
+    chia.
+</p>
+<p>
+    Các tập tin dữ liệu mô tả một quan hệ đều phải được nhận dạng bằng chuỗi "@DDB", ví dụ:<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@DDB<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABCDEG<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AB-&gt;C ; D-&gt;EG ; C-&gt;A ; BE-&gt;C ; BC-&gt;D<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CG-&gt;BD ; ACD-&gt;B ; CE-&gt;AG<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A-&gt;&gt;EG ; G-&gt;&gt;BD ; B-&gt;&gt;C<br/>
+    (Tên mặc nhiên tập tin dữ liệu mô tả một quan hệ là <em>Untitled.dat</em>)
+</p>
+
+<p>
+    Các tập tin dữ liệu mô tả nhiều quan hệ đều phải được nhận dạng bằng chuỗi “&lt;@DDB&gt;”, ví dụ:<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;@DDB&gt;<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;R{ABC} ; D{(A-&gt;BC) , (B-&gt;&gt;AC) }&gt;<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;R{DEF} ; D{(D-&gt;EF) , ( E-&gt;&gt;DF)}&gt;<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;R{DAG} ; D{(DA-&gt;G)}&gt;<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;R{HIA} ; D{(H-&gt;IA) , ( A-&gt;HI )}&gt;<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;R{HDJA} ; D{(HD-&gt;JA) , ( H-&gt;D) , ( D-&gt;A)}&gt;<br/>
+    (Tên mặc nhiên tập tin dữ liệu mô tả nhiều quan hệ là <em>Untitled.txt</em>)
+</p>
+
+<p>
+    Khi chương trình không vẽ đồ thị, bạn hãy đăng ký activeX MsFlxGrd bằng cách gõ dòng lệnh “<em>Regsvr32 Msflxgrd.ocx</em>”. Bạn cũng có thể thực thi tập
+    tin “<em>registerActiveX.bat</em>” trong thư mục EXE.
+</p>
+
+
+</body>
+</html>
